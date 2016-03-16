@@ -21,7 +21,11 @@
 
 #pragma mark 程序生命周期
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{   
+{
+    
+    //...
+    NSLog(@"测试修改");
+    
     //设置 UserAgent
     [ASIHTTPRequest setDefaultUserAgentString:[NSString stringWithFormat:@"%@/%@", [Tool getOSVersion], [Config Instance].getIOSGuid]];
     
